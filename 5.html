@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    let question = {'моя любимая игра ?': 'метро'} 
+    let currentQuestion = Object.keys(question)[0];
+
+    let answer = prompt('ответь на вопрос!!!: '+ currentQuestion + 'требую ответ:').toLowerCase()
+
+    if (answer === question[currentQuestion]) { 
+        alert('Карл, он отгадал')
+    } else { 
+        alert('нет')
+    }
+    </script>
+</body>
+</html>
